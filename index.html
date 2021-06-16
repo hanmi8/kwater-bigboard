@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KWATER - 종합정보</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.gnb').find('a').click(function(){
+                $('.gnb').children('li').removeClass('on')
+                $(this).parent('li').addClass('on')
+                let tabID = $(this).attr('href')
+                $('.tabContents').removeClass('on');
+                $(tabID).addClass('on');
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="topWrap">
+        <h1 class="branding">
+            <img src="images/ci_color.svg"><strong>한국수자원공사</strong>
+        </h1>
+        <ul class="gnb">
+           <li class="on"><a href="#tab01">종합정보</a></li>
+           <li><a href="#tab02">계통정보</a></li>
+           <li><a href="#tab03">GIS기반 감시시스템</a></li>
+           <li><a href="#tab04">통계정보</a></li>
+        </ul>
+        <div class="rollingText">
+            <span>잔류 염소 0.3mg/l 초과</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tabContents on row" id="tab01">
+            <div class="col-55">
+                <div class="panel">
+                    <div class="panel-header"><h2>수도시설현황</h2></div>
+                    <div class="panel-body">
+                        <div class="divWrap row">
+                            <div class="col-6">
+                                <h3>시설용량</h3>
+                                <div style="height:180px;"></div>
+                            </div>
+                            <div class="col-6">
+                                <h3>주요시설물</h3>
+                                <div class="tableWrap">
+                                    <table class="table-right">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="22%">
+                                            <col width="22%">
+                                            <col width="22%">
+                                            <col width="22%">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th rowspan="2">시설별 합계</th>
+                                            <th>취수장</th>
+                                            <th>정수장</th>
+                                            <th>배수지</th>
+                                            <th>가입장</th>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>24</td>
+                                            <td>42</td>
+                                            <td>89</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divWrap row">
+                            <div class="col-6">
+                                <h3>수도 취수 시설 현황</h3>
+                                <div class="tableWrap">
+                                    <table class="table-right">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="28%">
+                                            <col width="28%">
+                                            <col width="28%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>다목적댐</th>
+                                            <th>용수전용댐</th>
+                                            <th>하천표류수</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>취수량</th>
+                                            <td>7,427</td>
+                                            <td>1,017</td>
+                                            <td>2,288</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divWrap">
+                            <h3>정수처리방식 및 배출수 처리시설 현황</h3>
+                            <div class="tableWrap">
+                                <table class="table-right">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="16%">
+                                        <col width="16%">
+                                        <col width="16%">
+                                        <col width="16%">
+                                        <col width="16%">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th rowspan="2">구분</th>
+                                        <th rowspan="2">정수장</th>
+                                        <th colspan="3">정수처리방식</th>
+                                        <th>배출수처리시설</th>
+                                    </tr>
+                                    <tr>
+                                        <th>일반처리</th>
+                                        <th>막여과</th>
+                                        <th>고도처리</th>
+                                        <th>기계식</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>계</th>
+                                        <td>42</td>
+                                        <td>29</td>
+                                        <td>2</td>
+                                        <td>11</td>
+                                        <td>42</td>
+                                    </tr>
+                                    <tr>
+                                        <th>한강</th>
+                                        <td>42</td>
+                                        <td>29</td>
+                                        <td>2</td>
+                                        <td>11</td>
+                                        <td>42</td>
+                                    </tr>
+                                    <tr>
+                                        <th>금강</th>
+                                        <td>42</td>
+                                        <td>29</td>
+                                        <td>2</td>
+                                        <td>11</td>
+                                        <td>42</td>
+                                    </tr>
+                                    <tr>
+                                        <th>영섬강</th>
+                                        <td>42</td>
+                                        <td>29</td>
+                                        <td>2</td>
+                                        <td>11</td>
+                                        <td>42</td>
+                                    </tr>
+                                    <tr>
+                                        <th>낙동강</th>
+                                        <td>42</td>
+                                        <td>29</td>
+                                        <td>2</td>
+                                        <td>11</td>
+                                        <td>42</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-55">
+                <div class="panel">
+                    <div class="panel-header"><h2>한강권역 광역상수도현황</h2></div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="tableWrap">
+                                    <table class="table-right">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="35%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>금일</th>
+                                            <td>2,064</td>
+                                            <td>2,063</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금월</th>
+                                            <td>15,812</td>
+                                            <td>16,230</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금년</th>
+                                            <td>213,094</td>
+                                            <td>204,613</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="map">
+                                    <img src="images/map.png" style="width:112%;">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="tableWrap">
+                                    <table class="table-right table-text-color">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                            <th>정수탁도(NTU)</th>
+                                            <th>정수잔류염소(ppm)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>송전정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>황지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>일산정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>고양정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>파주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>반월정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>시흥정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>와부정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>성남정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>덕소정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>충주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-55">
+                <div class="panel">
+                    <div class="panel-header"><h2>영/섬권역 광역상수도현황</h2></div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="tableWrap">
+                                    <table class="table-right">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="35%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>금일</th>
+                                            <td>2,064</td>
+                                            <td>2,063</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금월</th>
+                                            <td>15,812</td>
+                                            <td>16,230</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금년</th>
+                                            <td>213,094</td>
+                                            <td>204,613</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="map">
+                                    <img src="images/map.png" style="width:112%;">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="tableWrap">
+                                    <table class="table-right table-text-color">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                            <th>정수탁도(NTU)</th>
+                                            <th>정수잔류염소(ppm)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>송전정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>황지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>일산정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>고양정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>파주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>반월정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>시흥정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>와부정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>성남정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>덕소정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>충주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-55">
+                <div class="panel">
+                    <div class="panel-header"><h2>낙동강권역 광역상수도현황</h2></div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="tableWrap">
+                                    <table class="table-right">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="35%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>금일</th>
+                                            <td>2,064</td>
+                                            <td>2,063</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금월</th>
+                                            <td>15,812</td>
+                                            <td>16,230</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금년</th>
+                                            <td>213,094</td>
+                                            <td>204,613</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="map">
+                                    <img src="images/map.png" style="width:112%;">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="tableWrap">
+                                    <table class="table-right table-text-color">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                            <th>정수탁도(NTU)</th>
+                                            <th>정수잔류염소(ppm)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>송전정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>황지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>일산정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>고양정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>파주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>반월정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>시흥정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>와부정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>성남정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>덕소정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>충주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-55">
+                <div class="panel">
+                    <div class="panel-header"><h2>금강권역 광역상수도현황</h2></div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="tableWrap">
+                                    <table class="table-right">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="35%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>금일</th>
+                                            <td>2,064</td>
+                                            <td>2,063</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금월</th>
+                                            <td>15,812</td>
+                                            <td>16,230</td>
+                                        </tr>
+                                        <tr>
+                                            <th>금년</th>
+                                            <td>213,094</td>
+                                            <td>204,613</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="map">
+                                    <img src="images/map.png" style="width:112%;">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="tableWrap">
+                                    <table class="table-right table-text-color">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수유입량(천m)</th>
+                                            <th>정수유출량(천m)</th>
+                                            <th>정수탁도(NTU)</th>
+                                            <th>정수잔류염소(ppm)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>송전정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>황지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>일산정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>고양정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>파주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>반월정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>시흥정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>와부정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>성남정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수지정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>덕소정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>충주정수장</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabContents row" id="tab02">
+            <div class="col-4">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>한강수계</h2>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>금강수계</h2>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>영산강/섬진강수계</h2>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>낙동강수계</h2>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabContents row" id="tab03">
+            <div class="col-3">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>지도선택</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/map.png" style="width:110%;">
+                            </div>
+                            <div class="col-6">
+                                <h3>파주</h3>
+                                <div class="tableWrap">
+                                    <table class="table-center">
+                                        <colgroup>
+                                            <col width="35%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">사업현황</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>사업기간</th>
+                                            <td>2009 ~ 2028(20년)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>운영게시일</th>
+                                            <td>2009.07.01</td>
+                                        </tr>
+                                        <tr>
+                                            <th>총사업비</th>
+                                            <td>297.889 백만원(20년)</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tableWrap">
+                                    <table class="table-center">
+                                        <colgroup>
+                                            <col width="35%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">시설현황</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>시설용량</th>
+                                            <td>219,000 m/일</td>
+                                        </tr>
+                                        <tr>
+                                            <th>취수장</th>
+                                            <td>2 개소</td>
+                                        </tr>
+                                        <tr>
+                                            <th>정수장</th>
+                                            <td>2 개소</td>
+                                        </tr>
+                                        <tr>
+                                            <th>배수지</th>
+                                            <td>6 개소</td>
+                                        </tr>
+                                        <tr>
+                                            <th>가업장</th>
+                                            <td>53 개소</td>
+                                        </tr>
+                                        <tr>
+                                            <th>관로</th>
+                                            <td>2,025 km</td>
+                                        </tr>
+                                        <tr>
+                                            <th>급수천</th>
+                                            <td>52,079 천</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tableWrap">
+                                    <table class="table-center">
+                                        <colgroup>
+                                            <col width="35%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">운영현황</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>유수율(수탁전)</th>
+                                            <td>84.30 %</td>
+                                        </tr>
+                                        <tr>
+                                            <th>유수율(수탁후)</th>
+                                            <td>88.10 %</td>
+                                        </tr>
+                                        <tr>
+                                            <th>급수인구</th>
+                                            <td>434,809 명</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>GIS기반 시설정보</h2>
+                    </div>
+                    <div class="panel-body">
+                        <img src="images/map2.png" style="width:100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>시설정보</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="divWrap">
+                                    <div clas="tableWrap">
+                                        <table class="table-right">
+                                            <colgroup>
+                                                <col width="*">
+                                                <col width="18%">
+                                                <col width="18%">
+                                                <col width="18%">
+                                                <col width="18%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th>누계</th>
+                                                <th>년</th>
+                                                <th>월</th>
+                                                <th>일</th>
+                                                <th>시간</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th>원수유입량(m)</th>
+                                                <td>303,846</td>
+                                                <td>27,701</td>
+                                                <td>2,209</td>
+                                                <td>88</td>
+                                            </tr>
+                                            <tr>
+                                                <th>정수공급량(m)</th>
+                                                <td>303,846</td>
+                                                <td>27,701</td>
+                                                <td>2,209</td>
+                                                <td>88</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="divWrap row">
+                                    <div class="col-6">
+                                        <table class="table-right table-text-color">
+                                            <colgroup>
+                                                <col width="*">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>원수유입량</th>
+                                                <th>정수공급량</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th>송전</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>황지</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>일산</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>고양</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>파주</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>반월</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table-right table-text-color">
+                                            <colgroup>
+                                                <col width="*">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>원수유입량</th>
+                                                <th>정수공급량</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th>송전</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>황지</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>일산</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>고양</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>파주</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                            <tr>
+                                                <th>반월</th>
+                                                <td>3,149</td>
+                                                <td>3,256</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="tableWrap">
+                                    <table class="table-right table-text-color">
+                                        <colgroup>
+                                            <col width="*">
+                                            <col width="14%">
+                                            <col width="14%">
+                                            <col width="14%">
+                                            <col width="14%">
+                                            <col width="14%">
+                                            <col width="14%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>원수 pH</th>
+                                            <th>원수 탁도</th>
+                                            <th>정수 탁도</th>
+                                            <th>정수 잔류염소</th>
+                                            <th>방수류 pH</th>
+                                            <th>방수류 SS</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>송전</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>황지</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>일산</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>고양</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>파주</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>반월</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>시흥</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>와부</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>성남</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수지</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>덕소</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>충주</th>
+                                            <td>3,335</td>
+                                            <td>3,402</td>
+                                            <td>0.02</td>
+                                            <td>0.7</td>
+                                            <td>6.88</td>
+                                            <td>2,08</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabContents row" id="tab04"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KWATER - 종합정보</title>
+    <style>
+        body {width:4000px;padding:10px;font-size:14px;font-family: 'Noto Sans Korean', sans-serif;background:#122246;color:#fff;}
+        .topWrap * {padding:0;margin:0;list-style:none;text-decoration:none;}
+        .topWrap {position:relative;display:flex;padding:10px;border-bottom:2px solid rgba(255,255,255,0.5);}
+        .topWrap .branding {width:300px;}
+        .topWrap .branding strong {font-size:18px;}
+        .topWrap .gnb {position:absolute;left:400px;bottom:0;display:flex;}
+        .topWrap .gnb li {flex:0 0 auto;width:240px;margin-right:3px;}
+        .topWrap .gnb li a {display:block;padding:15px 20px;background:rgba(255,255,255,0.3);border-radius:10px 10px 0 0;text-align:center;
+            color:#fff;font-size:18px;font-weight:400;}
+        .topWrap .gnb li.on a,.topWrap .gnb li a:hover {background:#fff;color:#3f4f5f;font-weight:700;}
+        .topWrap .rollingText {position:absolute;right:0;width:60%;border-radius:100px;padding:15px 50px;
+            background:rgba(0,0,0,0.3);}
+        .topWrap .rollingText span {font-size:18px;color:#ffff00;}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="topWrap">
+        <h1 class="branding">
+            <img src="images/ci_color.svg"><strong>한국수자원공사</strong>
+        </h1>
+        <ul class="gnb">
+           <li class="on"><a href="#tab01">종합정보</a></li>
+           <li><a href="#tab02">계통정보</a></li>
+           <li><a href="#tab03">배수지</a></li>
+           <li><a href="#tab04">통계정보</a></li>
+        </ul>
+        <div class="rollingText">
+            <span>잔류 염소 0.3mg/l 초과</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
